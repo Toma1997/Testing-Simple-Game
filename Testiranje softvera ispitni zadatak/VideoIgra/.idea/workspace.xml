@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d1bf33c-9dc3-40d8-9595-41127170e04d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/VideoIgra/videoigra/VideoIgraTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/VideoIgra/videoigra/VideoIgraTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/videoigra/Igrac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/videoigra/Igrac.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/videoigra/VideoIgraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/videoigra/VideoIgraTest.java" afterDir="false" />
     </list>
@@ -45,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/videoigra/Igrac.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="230" column="5" lean-forward="true" selection-start-line="230" selection-start-column="5" selection-end-line="230" selection-end-column="5" />
+            <state relative-caret-position="1836">
+              <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
             </state>
           </provider>
         </entry>
@@ -54,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/videoigra/VideoIgraTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="548" selection-start-line="548" selection-end-line="548" />
+            <state relative-caret-position="638">
+              <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +82,8 @@
         <option value="$PROJECT_DIR$/src/videoigra/Magija.java" />
         <option value="$PROJECT_DIR$/test/videoigra/IgracTest.java" />
         <option value="$PROJECT_DIR$/src/videoigra/VideoIgra.java" />
-        <option value="$PROJECT_DIR$/test/videoigra/VideoIgraTest.java" />
         <option value="$PROJECT_DIR$/src/videoigra/Igrac.java" />
+        <option value="$PROJECT_DIR$/test/videoigra/VideoIgraTest.java" />
       </list>
     </option>
   </component>
@@ -146,7 +143,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561324423986" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561324929463" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -280,7 +277,7 @@
       <workItem from="1561246846175" duration="345000" />
       <workItem from="1561247293739" duration="4966000" />
       <workItem from="1561289889657" duration="15097000" />
-      <workItem from="1561313967484" duration="6089000" />
+      <workItem from="1561313967484" duration="6594000" />
     </task>
     <servers />
   </component>
@@ -317,7 +314,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26524000" />
+    <option name="totallyTimeSpent" value="27029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -404,15 +401,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/videoigra/Igrac.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="230" column="5" lean-forward="true" selection-start-line="230" selection-start-column="5" selection-end-line="230" selection-end-column="5" />
+        <state relative-caret-position="1836">
+          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/videoigra/VideoIgraTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="548" selection-start-line="548" selection-end-line="548" />
+        <state relative-caret-position="638">
+          <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

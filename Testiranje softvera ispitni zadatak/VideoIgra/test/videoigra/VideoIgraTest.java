@@ -254,21 +254,6 @@ class VideoIgraTest {
         Mockito.verify(oruzjeMock).getSteta();
     }
 
-    @Test
-    void napadniIgrac_ShouldDecreaseEnergyTo1_IfEnergyEquals22(){
-        initializer();
-        Mockito.when(oruzjeMock.getPotrebnaSnaga()).thenReturn(75.0);
-        Mockito.when(oruzjeMock.getSteta()).thenReturn(15.0);
-        igrac1.setEnergija(22);
-        igrac1.napadniIgraca(0, igrac2);
-        double expected = 1.0;
-        double actual = igrac1.getEnergija();
-        assertEquals(expected, actual, 0.01);
-
-        Mockito.verify(oruzjeMock).getPotrebnaSnaga();
-        Mockito.verify(oruzjeMock).getSteta();
-    }
-
     @Test // treba da padne jer fali break u case PASIVNO
     void napadniIgrac_ShouldReturnStetaEqualTo127AndHalf_IfIEnergyEqualsTo21AndStrengthLessThanNeedAndStateEqualsToPASIVNO(){
         initializer();
@@ -546,6 +531,7 @@ class VideoIgraTest {
 
 
     // TESTOVI ZA 9. METOD -> upotrebiMagiju()
+
 
 
 

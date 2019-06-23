@@ -194,9 +194,7 @@ public class Igrac {
                     throw new IllegalStateException();
             }
 
-
             steta = (dolaznaSteta * 1.5)/ (odbrambenaVrednost * 0.9 *  k);
-
         }
 
         return steta;
