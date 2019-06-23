@@ -178,7 +178,7 @@ class VideoIgraTest {
     void toString_ShouldReturnDataAboutPlayerAsStringInSpecificFormat() {
         Igrac igrac = new Igrac("Toma", 45.5, 100.0, 75, 100, Igrac.Stanje.AGRESIVNO, new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
         String expected = "(Toma, 45.5/100.0, STR:75, INT:100)";
-        String actual = "(" + igrac.getNaziv() + ", " + igrac.getZdravlje() + "/" + igrac.getEnergija() + ", STR:" + igrac.getSnaga() + ", INT:" + igrac.getInteligencija() + ")";
+        String actual =  igrac.toString();
         assertEquals(expected, actual);
     }
 
@@ -186,15 +186,15 @@ class VideoIgraTest {
     private Odeca odecaMock = Mockito.mock(Odeca.class);
     private Magija magijaMock = Mockito.mock(Magija.class);
 
+    private Oruzje oruzjeMock2 = Mockito.mock(Oruzje.class);
+    private Odeca odecaMock2 = Mockito.mock(Odeca.class);
+    private Magija magijaMock2 = Mockito.mock(Magija.class);
+
     ArrayList<Oruzje> oruzja2 = new ArrayList<>();
     ArrayList<Odeca> odeca2 = new ArrayList<>();
     ArrayList<Magija> magije2 = new ArrayList<>();
     Igrac igrac1;
     Igrac igrac2;
-
-    private Oruzje oruzjeMock2 = Mockito.mock(Oruzje.class);
-    private Odeca odecaMock2 = Mockito.mock(Odeca.class);
-    private Magija magijaMock2 = Mockito.mock(Magija.class);
 
     void initializer(){
         oruzja2.add(oruzjeMock);
@@ -405,7 +405,6 @@ class VideoIgraTest {
         Mockito.verify(oruzjeMock2).getTezina();
     }
 
-    /* ne znam sta da stavim kao Stanje da bi izbacilo izuzetak
     @Test
     void odbraniSe_ShouldThrowIllegalStateException_IfTezinaLessThanMaxTezinaAndStateIsIllegal(){
         initializer();
@@ -417,7 +416,7 @@ class VideoIgraTest {
         Mockito.when(oruzjeMock.getTezina()).thenReturn(19.0);
         Mockito.when(oruzjeMock2.getTezina()).thenReturn(20.0);
 
-        igrac1.setStanje();
+        igrac1.setStanje(Igrac.Stanje.NEPOSTOJECE);
         assertThrows(IllegalStateException.class, () -> {
             igrac1.odbraniSe(25.0);
         });
@@ -428,7 +427,7 @@ class VideoIgraTest {
         Mockito.verify(odecaMock2).getOdbrambenaVrednost();
         Mockito.verify(oruzjeMock).getTezina();
         Mockito.verify(oruzjeMock2).getTezina();
-    } */
+    }
 
 
     @Test
@@ -503,7 +502,7 @@ class VideoIgraTest {
         Mockito.verify(oruzjeMock2).getTezina();
     }
 
-    /* isto nzm kako da unesem nepostojece stanje
+
     @Test
     void odbraniSe_ShouldThrowIllegalStateException_IfTezinaGreaterThanMaxTezinaAndStateIsIllegal(){
         initializer();
@@ -516,7 +515,7 @@ class VideoIgraTest {
         Mockito.when(oruzjeMock.getTezina()).thenReturn(19.0);
         Mockito.when(oruzjeMock2.getTezina()).thenReturn(20.0);
 
-        igrac1.setStanje();
+        igrac1.setStanje(Igrac.Stanje.NEPOSTOJECE);
         assertThrows(IllegalStateException.class, () -> {
             igrac1.odbraniSe(25.0);
         });
@@ -527,13 +526,47 @@ class VideoIgraTest {
         Mockito.verify(odecaMock2).getOdbrambenaVrednost();
         Mockito.verify(oruzjeMock).getTezina();
         Mockito.verify(oruzjeMock2).getTezina();
-    } */
+    }
 
 
     // TESTOVI ZA 9. METOD -> upotrebiMagiju()
 
+    @Test // OVAJ TEST NECE DA RADI IZ NEKOG RAZLOGA ZBOG VISE POZIVA MOCK FUNKCIJA U upotrebiMagiju metodi
+    void upotrebiMagiju_ShouldDecreaseZdravljeFor10Percent_IfInteligencijaLessThanNeed(){
+        initializer();
+        Mockito.when(magijaMock.getSteta()).thenReturn(15.0);
+        Mockito.when(magijaMock.getPotrebnaInteligencija()).thenReturn(65.0);
+        Mockito.when(magijaMock.getPotrebnaEnergija()).thenReturn(55.0);
 
+        igrac1.setInteligencija(55);
+        igrac1.upotrebiMagiju(0, igrac2);
+        double expected = 40.95;
+        double actual = igrac1.getZdravlje();
+        assertEquals(expected, actual, 0.01);
 
+        Mockito.verify(magijaMock).getSteta();
+        Mockito.verify(magijaMock).getPotrebnaInteligencija();
+        Mockito.verify(magijaMock).getPotrebnaEnergija();
+
+    }
+
+    @Test // OVAJ TEST NECE DA RADI IZ NEKOG RAZLOGA ZBOG VISE POZIVA MOCK FUNKCIJA U upotrebiMagiju metodi
+    void upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaLessThanNeed(){
+        initializer();
+        Mockito.when(magijaMock.getSteta()).thenReturn(15.0);
+        Mockito.when(magijaMock.getPotrebnaInteligencija()).thenReturn(65.0);
+        Mockito.when(magijaMock.getPotrebnaEnergija()).thenReturn(55.0);
+
+        igrac1.setInteligencija(55);
+        igrac1.upotrebiMagiju(0, igrac2);
+        double expected = 0.0;
+        double actual = igrac1.getEnergija();
+        assertEquals(expected, actual, 0.01);
+
+        Mockito.verify(magijaMock).getSteta();
+        Mockito.verify(magijaMock).getPotrebnaInteligencija();
+        Mockito.verify(magijaMock).getPotrebnaEnergija();
+    }
 
 
 }

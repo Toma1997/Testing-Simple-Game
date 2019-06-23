@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Igrac {
 
     //atributi klase
-    public static enum Stanje {DEFANZIVNO, AGRESIVNO, PASIVNO};
+    public static enum Stanje {DEFANZIVNO, AGRESIVNO, PASIVNO, NEPOSTOJECE};
     private String naziv;
     private double zdravlje, energija;
     private int snaga, inteligencija;
