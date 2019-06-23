@@ -163,13 +163,13 @@ public class Igrac {
 
             switch(stanje){
                 case AGRESIVNO:
-                    k = 0.3; // bug, ovo k bi trebalo za DEFANZIVNO
+                    k = 0.3;
                     break;
                 case PASIVNO:
                     k = 0.2;
                     break;
                 case DEFANZIVNO:
-                    k = 0.1; // bug, ovo k bi trebalo za AGRESIVNO
+                    k = 0.1;
                     break;
                 default:
                     throw new IllegalStateException();

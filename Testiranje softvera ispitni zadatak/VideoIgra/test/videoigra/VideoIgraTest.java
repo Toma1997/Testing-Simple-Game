@@ -342,9 +342,212 @@ class VideoIgraTest {
     @Test
     void odbraniSe_ShouldThrowAnIllegalArgumentException_IfGivenArgumentEqualToZero(){
         initializer();
+
         assertThrows(IllegalArgumentException.class, () -> {
             igrac1.odbraniSe(0.0);
         });
     }
+
+
+    @Test // treba da padne jer su zamenjeni k za AGRESIVNO i DEFANZIVNO
+    void odbraniSe_ShouldReturn6Point41_IfTezinaLessThanMaxTezinaAndStateIsAGRESIVNO(){
+        initializer();
+        Mockito.when(odecaMock.getTezina()).thenReturn(14.0);
+        Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
+        Mockito.when(odecaMock2.getTezina()).thenReturn(9.0);
+        Mockito.when(odecaMock2.getOdbrambenaVrednost()).thenReturn(15.0);
+
+        Mockito.when(oruzjeMock.getTezina()).thenReturn(19.0);
+        Mockito.when(oruzjeMock2.getTezina()).thenReturn(20.0);
+
+        igrac1.setStanje(Igrac.Stanje.AGRESIVNO);
+        double expected = 6.41;
+        double actual = igrac1.odbraniSe(25.0);
+        assertEquals(expected, actual, 0.1);
+
+        Mockito.verify(odecaMock).getTezina();
+        Mockito.verify(odecaMock).getOdbrambenaVrednost();
+        Mockito.verify(odecaMock2).getTezina();
+        Mockito.verify(odecaMock2).getOdbrambenaVrednost();
+        Mockito.verify(oruzjeMock).getTezina();
+        Mockito.verify(oruzjeMock2).getTezina();
+    }
+
+    @Test
+    void odbraniSe_ShouldReturn3Point2_IfTezinaLessThanMaxTezinaAndStateIsPASIVNO(){
+        initializer();
+        Mockito.when(odecaMock.getTezina()).thenReturn(14.0);
+        Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
+        Mockito.when(odecaMock2.getTezina()).thenReturn(9.0);
+        Mockito.when(odecaMock2.getOdbrambenaVrednost()).thenReturn(15.0);
+
+        Mockito.when(oruzjeMock.getTezina()).thenReturn(19.0);
+        Mockito.when(oruzjeMock2.getTezina()).thenReturn(20.0);
+
+        igrac1.setStanje(Igrac.Stanje.PASIVNO);
+        double expected = 3.2;
+        double actual = igrac1.odbraniSe(25.0);
+        assertEquals(expected, actual, 0.1);
+
+        Mockito.verify(odecaMock).getTezina();
+        Mockito.verify(odecaMock).getOdbrambenaVrednost();
+        Mockito.verify(odecaMock2).getTezina();
+        Mockito.verify(odecaMock2).getOdbrambenaVrednost();
+        Mockito.verify(oruzjeMock).getTezina();
+        Mockito.verify(oruzjeMock2).getTezina();
+    }
+
+    @Test // treba da padne jer su zamenjeni k za AGRESIVNO i DEFANZIVNO
+    void odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezinaAndStateIsDEFANZIVNO(){
+        initializer();
+        Mockito.when(odecaMock.getTezina()).thenReturn(14.0);
+        Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
+        Mockito.when(odecaMock2.getTezina()).thenReturn(9.0);
+        Mockito.when(odecaMock2.getOdbrambenaVrednost()).thenReturn(15.0);
+
+        Mockito.when(oruzjeMock.getTezina()).thenReturn(19.0);
+        Mockito.when(oruzjeMock2.getTezina()).thenReturn(20.0);
+
+        double expected = 2.13;
+        double actual = igrac1.odbraniSe(25.0);
+        assertEquals(expected, actual, 0.1);
+
+        Mockito.verify(odecaMock).getTezina();
+        Mockito.verify(odecaMock).getOdbrambenaVrednost();
+        Mockito.verify(odecaMock2).getTezina();
+        Mockito.verify(odecaMock2).getOdbrambenaVrednost();
+        Mockito.verify(oruzjeMock).getTezina();
+        Mockito.verify(oruzjeMock2).getTezina();
+    }
+
+    /* ne znam sta da stavim kao Stanje da bi izbacilo izuzetak
+    @Test
+    void odbraniSe_ShouldThrowIllegalStateException_IfTezinaLessThanMaxTezinaAndStateIsIllegal(){
+        initializer();
+        Mockito.when(odecaMock.getTezina()).thenReturn(14.0);
+        Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
+        Mockito.when(odecaMock2.getTezina()).thenReturn(9.0);
+        Mockito.when(odecaMock2.getOdbrambenaVrednost()).thenReturn(15.0);
+
+        Mockito.when(oruzjeMock.getTezina()).thenReturn(19.0);
+        Mockito.when(oruzjeMock2.getTezina()).thenReturn(20.0);
+
+        igrac1.setStanje();
+        assertThrows(IllegalStateException.class, () -> {
+            igrac1.odbraniSe(25.0);
+        });
+
+        Mockito.verify(odecaMock).getTezina();
+        Mockito.verify(odecaMock).getOdbrambenaVrednost();
+        Mockito.verify(odecaMock2).getTezina();
+        Mockito.verify(odecaMock2).getOdbrambenaVrednost();
+        Mockito.verify(oruzjeMock).getTezina();
+        Mockito.verify(oruzjeMock2).getTezina();
+    } */
+
+
+    @Test
+    void odbraniSe_ShouldReturn4Point27_IfTezinaGreaterThanMaxTezinaAndStateIsDEFANZIVNO(){
+        initializer();
+        igrac1.setSnaga(20);
+        Mockito.when(odecaMock.getTezina()).thenReturn(15.0);
+        Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
+        Mockito.when(odecaMock2.getTezina()).thenReturn(9.0);
+        Mockito.when(odecaMock2.getOdbrambenaVrednost()).thenReturn(15.0);
+
+        Mockito.when(oruzjeMock.getTezina()).thenReturn(19.0);
+        Mockito.when(oruzjeMock2.getTezina()).thenReturn(20.0);
+
+        double expected = 4.27;
+        double actual = igrac1.odbraniSe(25.0);
+        assertEquals(expected, actual, 0.1);
+
+        Mockito.verify(odecaMock).getTezina();
+        Mockito.verify(odecaMock).getOdbrambenaVrednost();
+        Mockito.verify(odecaMock2).getTezina();
+        Mockito.verify(odecaMock2).getOdbrambenaVrednost();
+        Mockito.verify(oruzjeMock).getTezina();
+        Mockito.verify(oruzjeMock2).getTezina();
+    }
+
+    @Test
+    void odbraniSe_ShouldReturn7Point12_IfTezinaGreaterThanMaxTezinaAndStateIsPASIVNO(){
+        initializer();
+        igrac1.setSnaga(20);
+        Mockito.when(odecaMock.getTezina()).thenReturn(15.0);
+        Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
+        Mockito.when(odecaMock2.getTezina()).thenReturn(9.0);
+        Mockito.when(odecaMock2.getOdbrambenaVrednost()).thenReturn(15.0);
+
+        Mockito.when(oruzjeMock.getTezina()).thenReturn(19.0);
+        Mockito.when(oruzjeMock2.getTezina()).thenReturn(20.0);
+        igrac1.setStanje(Igrac.Stanje.PASIVNO);
+        double expected = 7.12;
+        double actual = igrac1.odbraniSe(25.0);
+        assertEquals(expected, actual, 0.1);
+
+        Mockito.verify(odecaMock).getTezina();
+        Mockito.verify(odecaMock).getOdbrambenaVrednost();
+        Mockito.verify(odecaMock2).getTezina();
+        Mockito.verify(odecaMock2).getOdbrambenaVrednost();
+        Mockito.verify(oruzjeMock).getTezina();
+        Mockito.verify(oruzjeMock2).getTezina();
+    }
+
+    @Test
+    void odbraniSe_ShouldReturn13Point35_IfTezinaGreaterThanMaxTezinaAndStateIsAGRESIVNO(){
+        initializer();
+        igrac1.setSnaga(20);
+        Mockito.when(odecaMock.getTezina()).thenReturn(15.0);
+        Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
+        Mockito.when(odecaMock2.getTezina()).thenReturn(9.0);
+        Mockito.when(odecaMock2.getOdbrambenaVrednost()).thenReturn(15.0);
+
+        Mockito.when(oruzjeMock.getTezina()).thenReturn(19.0);
+        Mockito.when(oruzjeMock2.getTezina()).thenReturn(20.0);
+        igrac1.setStanje(Igrac.Stanje.AGRESIVNO);
+        double expected = 13.35;
+        double actual = igrac1.odbraniSe(25.0);
+        assertEquals(expected, actual, 0.1);
+
+        Mockito.verify(odecaMock).getTezina();
+        Mockito.verify(odecaMock).getOdbrambenaVrednost();
+        Mockito.verify(odecaMock2).getTezina();
+        Mockito.verify(odecaMock2).getOdbrambenaVrednost();
+        Mockito.verify(oruzjeMock).getTezina();
+        Mockito.verify(oruzjeMock2).getTezina();
+    }
+
+    /* isto nzm kako da unesem nepostojece stanje
+    @Test
+    void odbraniSe_ShouldThrowIllegalStateException_IfTezinaGreaterThanMaxTezinaAndStateIsIllegal(){
+        initializer();
+        igrac1.setSnaga(20);
+        Mockito.when(odecaMock.getTezina()).thenReturn(15.0);
+        Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
+        Mockito.when(odecaMock2.getTezina()).thenReturn(9.0);
+        Mockito.when(odecaMock2.getOdbrambenaVrednost()).thenReturn(15.0);
+
+        Mockito.when(oruzjeMock.getTezina()).thenReturn(19.0);
+        Mockito.when(oruzjeMock2.getTezina()).thenReturn(20.0);
+
+        igrac1.setStanje();
+        assertThrows(IllegalStateException.class, () -> {
+            igrac1.odbraniSe(25.0);
+        });
+
+        Mockito.verify(odecaMock).getTezina();
+        Mockito.verify(odecaMock).getOdbrambenaVrednost();
+        Mockito.verify(odecaMock2).getTezina();
+        Mockito.verify(odecaMock2).getOdbrambenaVrednost();
+        Mockito.verify(oruzjeMock).getTezina();
+        Mockito.verify(oruzjeMock2).getTezina();
+    } */
+
+
+    // TESTOVI ZA 9. METOD -> upotrebiMagiju()
+
+
+
 
 }
