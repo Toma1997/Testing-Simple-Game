@@ -2,8 +2,6 @@ package videoigra;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import org.mockito.internal.verification.Times;
-
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -212,7 +210,7 @@ class VideoIgraTest {
 
     // TESTOVI ZA 7. METOD -> napadniIgraca()
     @Test
-    void napadniIgrac_ShouldReturnStetaEqualTo96_IfIEnergyEqualTo19AndStateEqualsToDEFANZIVNO(){
+    void napadniIgrac_ShouldReturnStetaEqualTo96_IfIEnergyEqualTo19_WhenStateEqualsToDEFANZIVNO(){
         initializer();
 
         Mockito.when(oruzjeMock.getPotrebnaSnaga()).thenReturn(75.0);
@@ -226,7 +224,7 @@ class VideoIgraTest {
     }
 
     @Test // ovaj test i treba da padne zbog granicne vrednosti za energiju u prvom uslovu
-    void napadniIgrac_ShouldReturnStetaEqualTo96_IfIEnergyEqualTo20AndStateEqualsToDEFANZIVNO(){
+    void napadniIgrac_ShouldReturnStetaEqualTo96_IfIEnergyEqualTo20_WhenStateEqualsToDEFANZIVNO(){
         initializer();
         Mockito.when(oruzjeMock.getPotrebnaSnaga()).thenReturn(75.0);
         Mockito.when(oruzjeMock.getSteta()).thenReturn(15.0);
@@ -241,7 +239,7 @@ class VideoIgraTest {
     }
 
     @Test
-    void napadniIgrac_ShouldDecreaseEnergyTo0_IfIEnergyEqualTo21(){
+    void napadniIgrac_ShouldDecreaseEnergyTo0_WhenEnergyEqualTo21(){
         initializer();
         Mockito.when(oruzjeMock.getPotrebnaSnaga()).thenReturn(75.0);
         Mockito.when(oruzjeMock.getSteta()).thenReturn(15.0);
@@ -256,7 +254,7 @@ class VideoIgraTest {
     }
 
     @Test // treba da padne jer fali break u case PASIVNO
-    void napadniIgrac_ShouldReturnStetaEqualTo127AndHalf_IfIEnergyEqualsTo21AndStrengthLessThanNeedAndStateEqualsToPASIVNO(){
+    void napadniIgrac_ShouldReturnStetaEqualTo127AndHalf_IfIEnergyEqualsTo21AndStrengthLessThanNeed_WhenStateEqualsToPASIVNO(){
         initializer();
         Mockito.when(oruzjeMock.getPotrebnaSnaga()).thenReturn(61.0);
         Mockito.when(oruzjeMock.getSteta()).thenReturn(15.0);
@@ -271,7 +269,7 @@ class VideoIgraTest {
     }
 
     @Test
-    void napadniIgrac_ShouldReturnStetaEqualTo153_IfIEnergyEqualsTo21AndStrengthLessThanNeedAndStateEqualsToAGRESIVNO(){
+    void napadniIgrac_ShouldReturnStetaEqualTo153_IfIEnergyEqualsTo21AndStrengthLessThanNeedAnd_WhenStateEqualsToAGRESIVNO(){
         initializer();
         Mockito.when(oruzjeMock.getPotrebnaSnaga()).thenReturn(61.0);
         Mockito.when(oruzjeMock.getSteta()).thenReturn(15.0);
@@ -286,7 +284,7 @@ class VideoIgraTest {
     }
 
     @Test
-    void napadniIgrac_ShouldReturnStetaEqualTo153_IfIEnergyEqualsTo21AndStrengthEqualAsNeedAndStateEqualsToAGRESIVNO(){
+    void napadniIgrac_ShouldReturnStetaEqualTo153_IfIEnergyEqualsTo21AndStrengthEqualAsNeed_WhenStateEqualsToAGRESIVNO(){
         initializer();
         Mockito.when(oruzjeMock.getPotrebnaSnaga()).thenReturn(60.0);
         Mockito.when(oruzjeMock.getSteta()).thenReturn(15.0);
@@ -301,7 +299,7 @@ class VideoIgraTest {
     }
 
     @Test
-    void napadniIgrac_ShouldReturnStetaEqualTo162_IfIEnergyEqualsTo21AndStrengthGreaterThanNeedAndStateEqualsToAGRESIVNO(){
+    void napadniIgrac_ShouldReturnStetaEqualTo162_IfIEnergyEqualsTo21AndStrengthGreaterThanNeed_WhenStateEqualsToAGRESIVNO(){
         initializer();
         Mockito.when(oruzjeMock.getPotrebnaSnaga()).thenReturn(59.0);
         Mockito.when(oruzjeMock.getSteta()).thenReturn(15.0);
@@ -336,7 +334,7 @@ class VideoIgraTest {
 
 
     @Test // treba da padne jer su zamenjeni k za AGRESIVNO i DEFANZIVNO
-    void odbraniSe_ShouldReturn6Point41_IfTezinaLessThanMaxTezinaAndStateIsAGRESIVNO(){
+    void odbraniSe_ShouldReturn6Point41_IfTezinaLessThanMaxTezina_WhenStateIsAGRESIVNO(){
         initializer();
         Mockito.when(odecaMock.getTezina()).thenReturn(14.0);
         Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
@@ -360,7 +358,7 @@ class VideoIgraTest {
     }
 
     @Test
-    void odbraniSe_ShouldReturn3Point2_IfTezinaLessThanMaxTezinaAndStateIsPASIVNO(){
+    void odbraniSe_ShouldReturn3Point2_IfTezinaLessThanMaxTezina_WhenStateIsPASIVNO(){
         initializer();
         Mockito.when(odecaMock.getTezina()).thenReturn(14.0);
         Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
@@ -384,7 +382,7 @@ class VideoIgraTest {
     }
 
     @Test // treba da padne jer su zamenjeni k za AGRESIVNO i DEFANZIVNO
-    void odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezinaAndStateIsDEFANZIVNO(){
+    void odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezina_WhenStateIsDEFANZIVNO(){
         initializer();
         Mockito.when(odecaMock.getTezina()).thenReturn(14.0);
         Mockito.when(odecaMock.getOdbrambenaVrednost()).thenReturn(24.0);
@@ -432,7 +430,7 @@ class VideoIgraTest {
 
 
     @Test
-    void odbraniSe_ShouldReturn4Point27_IfTezinaGreaterThanMaxTezinaAndStateIsDEFANZIVNO(){
+    void odbraniSe_ShouldReturn4Point27_IfTezinaGreaterThanMaxTezina_WhenStateIsDEFANZIVNO(){
         initializer();
         igrac1.setSnaga(20);
         Mockito.when(odecaMock.getTezina()).thenReturn(15.0);
@@ -456,7 +454,7 @@ class VideoIgraTest {
     }
 
     @Test
-    void odbraniSe_ShouldReturn7Point12_IfTezinaGreaterThanMaxTezinaAndStateIsPASIVNO(){
+    void odbraniSe_ShouldReturn7Point12_IfTezinaGreaterThanMaxTezina_WhenStateIsPASIVNO(){
         initializer();
         igrac1.setSnaga(20);
         Mockito.when(odecaMock.getTezina()).thenReturn(15.0);
@@ -480,7 +478,7 @@ class VideoIgraTest {
     }
 
     @Test
-    void odbraniSe_ShouldReturn13Point35_IfTezinaGreaterThanMaxTezinaAndStateIsAGRESIVNO(){
+    void odbraniSe_ShouldReturn13Point35_IfTezinaGreaterThanMaxTezina_WhenStateIsAGRESIVNO(){
         initializer();
         igrac1.setSnaga(20);
         Mockito.when(odecaMock.getTezina()).thenReturn(15.0);
@@ -606,7 +604,7 @@ class VideoIgraTest {
         initializer();
         Mockito.when(magijaMock.getSteta()).thenReturn(15.0);
         Mockito.when(magijaMock.getPotrebnaInteligencija()).thenReturn(65.0);
-        Mockito.when(magijaMock.getPotrebnaEnergija()).thenReturn(55.0);
+        Mockito.when(magijaMock.getPotrebnaEnergija()).thenReturn(85.0);
 
         igrac1.upotrebiMagiju(0, igrac2);
         double expected = 0.0;
