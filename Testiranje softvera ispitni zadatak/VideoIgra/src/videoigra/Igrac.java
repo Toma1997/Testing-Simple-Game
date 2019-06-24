@@ -215,13 +215,13 @@ public class Igrac {
             double razlika = m.getPotrebnaEnergija() - energija;
             if(zdravlje > razlika){
                 zdravlje = zdravlje - razlika;
-                energija = 0; // bug, ovo treba izvan if-else, npr ispod razlike
+                energija = 0;
             }
             else{
                 stetaMagije = 0;
             }
 
-        } // bug, fali else za kad ima dovoljno energije za upotrebu magije -> else { energija -= m.getPotrebnaEnergija();}
+        }
 
         steta = stetaMagije * (inteligencija * 0.1 + (inteligencija - m.getPotrebnaInteligencija()) + (inteligencija - meta.getInteligencija()));
 
@@ -232,7 +232,7 @@ public class Igrac {
         double oporavljenaEnergija = 0;
 
         if(energija < 75){
-            if(energija + 500 > 100){ // bug, treba energija + 50, ne 500
+            if(energija + 500 > 100){
                 oporavljenaEnergija = 100 - energija;
             }else{
                 oporavljenaEnergija = 50;

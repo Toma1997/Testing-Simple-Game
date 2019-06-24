@@ -2,6 +2,7 @@ package videoigra;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.mockito.internal.verification.Times;
 
 import java.util.ArrayList;
 
@@ -531,7 +532,7 @@ class VideoIgraTest {
 
     // TESTOVI ZA 9. METOD -> upotrebiMagiju()
 
-    @Test // OVAJ TEST NECE DA RADI IZ NEKOG RAZLOGA ZBOG VISE POZIVA MOCK FUNKCIJA U upotrebiMagiju metodi
+    @Test
     void upotrebiMagiju_ShouldDecreaseZdravljeFor10Percent_IfInteligencijaLessThanNeed(){
         initializer();
         Mockito.when(magijaMock.getSteta()).thenReturn(15.0);
@@ -545,12 +546,11 @@ class VideoIgraTest {
         assertEquals(expected, actual, 0.01);
 
         Mockito.verify(magijaMock).getSteta();
-        Mockito.verify(magijaMock).getPotrebnaInteligencija();
-        Mockito.verify(magijaMock).getPotrebnaEnergija();
-
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaInteligencija();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaEnergija();
     }
 
-    @Test // OVAJ TEST NECE DA RADI IZ NEKOG RAZLOGA ZBOG VISE POZIVA MOCK FUNKCIJA U upotrebiMagiju metodi
+    @Test
     void upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaLessThanNeed(){
         initializer();
         Mockito.when(magijaMock.getSteta()).thenReturn(15.0);
@@ -564,9 +564,142 @@ class VideoIgraTest {
         assertEquals(expected, actual, 0.01);
 
         Mockito.verify(magijaMock).getSteta();
-        Mockito.verify(magijaMock).getPotrebnaInteligencija();
-        Mockito.verify(magijaMock).getPotrebnaEnergija();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaInteligencija();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaEnergija();
+    }
+
+    @Test
+    void upotrebiMagiju_ShouldReturnDamageEqualToZero_IfInteligencijaLessThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference(){
+        initializer();
+        Mockito.when(magijaMock.getSteta()).thenReturn(15.0);
+        Mockito.when(magijaMock.getPotrebnaInteligencija()).thenReturn(65.0);
+        Mockito.when(magijaMock.getPotrebnaEnergija()).thenReturn(55.0);
+        igrac1.setInteligencija(55);
+        double expected = 0.0;
+        double actual = igrac1.upotrebiMagiju(0, igrac2);
+        assertEquals(expected, actual, 0.01);
+
+        Mockito.verify(magijaMock).getSteta();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaInteligencija();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaEnergija();
+    }
+
+    @Test
+    void upotrebiMagiju_ShouldReturnDamageEqualTo7Point5_IfInteligencijaLessThanNeedAndEnergijaLessThanNeedAndZdravljeGreaterThanDifference(){
+        initializer();
+        Mockito.when(magijaMock.getSteta()).thenReturn(15.0);
+        Mockito.when(magijaMock.getPotrebnaInteligencija()).thenReturn(65.0);
+        Mockito.when(magijaMock.getPotrebnaEnergija()).thenReturn(35.0);
+        igrac1.setInteligencija(55);
+        double expected = 7.5;
+        double actual = igrac1.upotrebiMagiju(0, igrac2);
+        assertEquals(expected, actual, 0.1);
+
+        Mockito.verify(magijaMock).getSteta();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaInteligencija();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaEnergija();
     }
 
 
+    @Test // ovaj test pada jer energija nije setovana na 0 izvan if-else unutrasnjeg bloka za proveru zdravlja sa razlikom
+    void upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference(){
+        initializer();
+        Mockito.when(magijaMock.getSteta()).thenReturn(15.0);
+        Mockito.when(magijaMock.getPotrebnaInteligencija()).thenReturn(65.0);
+        Mockito.when(magijaMock.getPotrebnaEnergija()).thenReturn(55.0);
+
+        igrac1.upotrebiMagiju(0, igrac2);
+        double expected = 0.0;
+        double actual = igrac1.getEnergija();
+        assertEquals(expected, actual, 0.01);
+
+        Mockito.verify(magijaMock).getSteta();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaInteligencija();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaEnergija();
+    }
+
+    @Test
+    void upotrebiMagiju_ShouldDecreaseZdravljeByDifferenceTo39Point5_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljeGreaterThanDifference(){
+        initializer();
+        Mockito.when(magijaMock.getSteta()).thenReturn(15.0);
+        Mockito.when(magijaMock.getPotrebnaInteligencija()).thenReturn(65.0);
+        Mockito.when(magijaMock.getPotrebnaEnergija()).thenReturn(25.0);
+        igrac1.upotrebiMagiju(0, igrac2);
+        double expected = 39.5;
+        double actual = igrac1.getZdravlje();
+        assertEquals(expected, actual, 0.1);
+
+        Mockito.verify(magijaMock).getSteta();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaInteligencija();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaEnergija();
+    }
+
+    @Test // ovaj test pada jer ne postoji else slucaj kada je energija veca od potrebne
+    void upotrebiMagiju_ShouldDecreaseEnergyByNeededEnergy_IfInteligencijaGreaterThanNeedAndEnergijaGreaterThanNeed(){
+        initializer();
+        Mockito.when(magijaMock.getSteta()).thenReturn(15.0);
+        Mockito.when(magijaMock.getPotrebnaInteligencija()).thenReturn(65.0);
+        Mockito.when(magijaMock.getPotrebnaEnergija()).thenReturn(25.0);
+        igrac1.setEnergija(30.0);
+        igrac1.upotrebiMagiju(0, igrac2);
+        double expected = 5.0;
+        double actual = igrac1.getEnergija();
+        assertEquals(expected, actual, 0.1);
+
+        Mockito.verify(magijaMock).getSteta();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaInteligencija();
+        Mockito.verify(magijaMock, Mockito.atMost(2)).getPotrebnaEnergija();
+    }
+
+    // // TESTOVI ZA 10. METOD -> odmoriSe()
+
+    @Test
+    void odmoriSe_ShouldReturnZero_IfEnergyGreaterThan75(){
+        initializer();
+        igrac1.setEnergija(80.0);
+        double expected = 0.0;
+        double actual = igrac1.odmoriSe();
+        assertEquals(expected, actual, 0.01);
+
+    }
+
+    @Test
+    void odmoriSe_ShouldReturn49_IfEnergyGreaterThan50(){
+        initializer();
+        igrac1.setEnergija(51.0);
+        double expected = 49.0;
+        double actual = igrac1.odmoriSe();
+        assertEquals(expected, actual, 0.01);
+
+    }
+
+    @Test
+    void odmoriSe_ShouldReturn40_IfEnergyGreaterThan50(){
+        initializer();
+        igrac1.setEnergija(60.0);
+        double expected = 40.0;
+        double actual = igrac1.odmoriSe();
+        assertEquals(expected, actual, 0.01);
+
+    }
+
+    @Test
+    void odmoriSe_ShouldReturn50_IfEnergyEqualTo50(){
+        initializer();
+        igrac1.setEnergija(50.0);
+        double expected = 50.0;
+        double actual = igrac1.odmoriSe();
+        assertEquals(expected, actual, 0.01);
+
+    }
+
+    @Test // ima bug u uslovu za proveru da li je energija + 50 > 100, jer umesto 50 stoji 500
+    void odmoriSe_ShouldReturn50_IfEnergyLessThan50(){
+        initializer();
+        igrac1.setEnergija(40.0);
+        double expected = 50.0;
+        double actual = igrac1.odmoriSe();
+        assertEquals(expected, actual, 0.01);
+
+    }
 }
