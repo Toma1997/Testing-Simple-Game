@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d1bf33c-9dc3-40d8-9595-41127170e04d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Bug report.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Testing report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Testing report.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/videoigra/VideoIgraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/videoigra/VideoIgraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VideoIgra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VideoIgra.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Faks- Softversko i Informaciono Inzenjerstvo/3. Godina/2. Semestar/Klijentske Veb Aplikacije/Vezbe/Ispit/v10 angular-fitness-app rad sa podacima - pretraga -servis prijava i registracija - rad sa profilom/node_modules/" />
     <ignored path="$PROJECT_DIR$/Faks- Softversko i Informaciono Inzenjerstvo/3. Godina/2. Semestar/Klijentske Veb Aplikacije/Vezbe/Ispit/v11 angular-fitness-app - editovane teme, optimizacija i kraj projekta/node_modules/" />
@@ -17,10 +17,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/VideoIgra$videoigra_in_VideoIgra.ic" NAME="videoigra in VideoIgra Coverage Results" MODIFIED="1561377936724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/VideoIgra$IgracTest_getNazivTest.ic" NAME="IgracTest.getNazivTest Coverage Results" MODIFIED="1561249351083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>videoigra.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/VideoIgra$IgracTest_getNazivTest.ic" NAME="IgracTest.getNazivTest Coverage Results" MODIFIED="1561249351083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/VideoIgra$videoigra_in_VideoIgra.ic" NAME="videoigra in VideoIgra Coverage Results" MODIFIED="1561463447470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>videoigra.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/VideoIgra$VideoIgraTest_odbraniSe_ShouldThrowIllegalStateException_IfTezinaGreaterThanMaxTezinaAndStateIsIllegal.ic" NAME="VideoIgraTest.odbraniSe_ShouldThrowIllegalStateException_IfTezinaGreaterThanMaxTezinaAndStateIsIllegal Coverage Results" MODIFIED="1561329381750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -51,7 +51,20 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\Korisnik\Desktop\Postavka ispitnog zadatka" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/videoigra/VideoIgraTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="230" column="28" lean-forward="true" selection-start-line="230" selection-start-column="28" selection-end-line="230" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -90,14 +103,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="VideoIgra" type="b2602c69:ProjectViewProjectNode" />
               <item name="VideoIgra" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VideoIgra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VideoIgra" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VideoIgra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VideoIgra" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="videoigra" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -112,10 +136,10 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561390125129" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561463729306" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -142,7 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VideoIgraTest.odmoriSe_ShouldReturn50_IfEnergyLessThan50">
+  <component name="RunManager" selected="JUnit.videoigra in VideoIgra">
     <configuration name="VideoIgraTest.odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezina_WhenStateIsDEFANZIVNO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VideoIgra" />
       <extension name="coverage">
@@ -154,22 +178,6 @@
       <option name="PACKAGE_NAME" value="videoigra" />
       <option name="MAIN_CLASS_NAME" value="videoigra.VideoIgraTest" />
       <option name="METHOD_NAME" value="odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezina_WhenStateIsDEFANZIVNO" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VideoIgraTest.odbraniSe_ShouldReturn6Point41_IfTezinaLessThanMaxTezina_WhenStateIsAGRESIVNO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="VideoIgra" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="videoigra.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="videoigra" />
-      <option name="MAIN_CLASS_NAME" value="videoigra.VideoIgraTest" />
-      <option name="METHOD_NAME" value="odbraniSe_ShouldReturn6Point41_IfTezinaLessThanMaxTezina_WhenStateIsAGRESIVNO" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -223,13 +231,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="videoigra in VideoIgra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VideoIgra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="videoigra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="videoigra" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.videoigra in VideoIgra" />
         <item itemvalue="JUnit.VideoIgraTest.odmoriSe_ShouldReturn50_IfEnergyLessThan50" />
         <item itemvalue="JUnit.VideoIgraTest.upotrebiMagiju_ShouldDecreaseEnergyByNeededEnergy_IfInteligencijaGreaterThanNeedAndEnergijaGreaterThanNeed" />
         <item itemvalue="JUnit.VideoIgraTest.upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference" />
         <item itemvalue="JUnit.VideoIgraTest.odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezina_WhenStateIsDEFANZIVNO" />
-        <item itemvalue="JUnit.VideoIgraTest.odbraniSe_ShouldReturn6Point41_IfTezinaLessThanMaxTezina_WhenStateIsAGRESIVNO" />
       </list>
     </recent_temporary>
   </component>
@@ -253,9 +275,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VideoIgraTest_upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference - 2019.06.24 at 14h 50m 57s.xml">
-      <configuration name="VideoIgraTest.upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VideoIgraTest_upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference - 2019.06.24 at 14h 52m 37s.xml">
       <configuration name="VideoIgraTest.upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference" configurationId="JUnit" />
     </history-entry>
@@ -283,14 +302,17 @@
     <history-entry file="VideoIgraTest_odmoriSe_ShouldReturn50_IfEnergyLessThan50 - 2019.06.24 at 17h 25m 40s.xml">
       <configuration name="VideoIgraTest.odmoriSe_ShouldReturn50_IfEnergyLessThan50" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="videoigra_in_VideoIgra - 2019.06.25 at 13h 51m 16s.xml">
+      <configuration name="videoigra in VideoIgra" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="52160000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1788026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -299,14 +321,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47727272" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47635525" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32871974" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32900432" />
@@ -319,7 +341,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.32995737" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.29317698" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.12459547" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,31 +349,9 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/videoigra/IgracTest.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.0-RC2/junit-jupiter-api-5.5.0-RC2.jar!/org/junit/jupiter/api/function/Executable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="237" selection-start-line="237" selection-end-line="237" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-          <folding>
-            <element signature="e#10065#10066#0" expanded="true" />
-            <element signature="e#10148#10149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.0-RC2/junit-jupiter-api-5.5.0-RC2.jar!/org/junit/jupiter/api/function/Executable.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Enum.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Object.java" />
     <entry file="file://$PROJECT_DIR$/src/videoigra/Oruzje.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -389,8 +389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/videoigra/VideoIgraTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="695" column="22" lean-forward="true" selection-start-line="695" selection-start-column="22" selection-end-line="695" selection-end-column="22" />
+        <state relative-caret-position="376">
+          <caret line="230" column="28" lean-forward="true" selection-start-line="230" selection-start-column="28" selection-end-line="230" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -437,7 +437,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
