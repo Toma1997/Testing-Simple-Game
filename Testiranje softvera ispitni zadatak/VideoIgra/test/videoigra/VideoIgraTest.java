@@ -181,6 +181,48 @@ class VideoIgraTest {
         assertEquals(expected, actual);
     }
 
+    // TESTOVI ZA SETTERE KAD JE NULL
+    @Test
+    void setNaziv_ShouldThrowNullPointerException_WhenNullIsPassed(){
+        Igrac igrac = new Igrac("Toma", 45.5, 100.0, 75, 100, Igrac.Stanje.AGRESIVNO, new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+        assertThrows(NullPointerException.class, () -> {
+            igrac.setNaziv(null);
+        });
+    }
+
+    @Test
+    void setStanje_ShouldThrowNullPointerException_WhenNullIsPassed(){
+        Igrac igrac = new Igrac("Toma", 45.5, 100.0, 75, 100, Igrac.Stanje.AGRESIVNO, new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+        assertThrows(NullPointerException.class, () -> {
+            igrac.setStanje(null);
+        });
+    }
+
+    @Test
+    void setOruzja_ShouldThrowNullPointerException_WhenNullIsPassed(){
+        Igrac igrac = new Igrac("Toma", 45.5, 100.0, 75, 100, Igrac.Stanje.AGRESIVNO, new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+        assertThrows(NullPointerException.class, () -> {
+            igrac.setOruzja(null);
+        });
+    }
+
+    @Test
+    void setOdeca_ShouldThrowNullPointerException_WhenNullIsPassed(){
+        Igrac igrac = new Igrac("Toma", 45.5, 100.0, 75, 100, Igrac.Stanje.AGRESIVNO, new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+        assertThrows(NullPointerException.class, () -> {
+            igrac.setOdeca(null);
+        });
+    }
+
+    @Test
+    void setMagije_ShouldThrowNullPointerException_WhenNullIsPassed(){
+        Igrac igrac = new Igrac("Toma", 45.5, 100.0, 75, 100, Igrac.Stanje.AGRESIVNO, new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+        assertThrows(NullPointerException.class, () -> {
+            igrac.setMagije(null);
+        });
+    }
+
+
     private Oruzje oruzjeMock = Mockito.mock(Oruzje.class);
     private Odeca odecaMock = Mockito.mock(Odeca.class);
     private Magija magijaMock = Mockito.mock(Magija.class);
@@ -209,6 +251,23 @@ class VideoIgraTest {
     }
 
     // TESTOVI ZA 7. METOD -> napadniIgraca()
+
+    @Test // test pada jer nije obradjen izuzetak
+    void napadniIgrac_ShouldThrowAnIllegalArgumentException_WhenNegativeIndexIsPassed(){
+        initializer();
+        assertThrows(IllegalArgumentException.class, () -> {
+            igrac1.napadniIgraca(-1, igrac2);
+        });
+    }
+
+    @Test // test pada jer nije obradjen izuzetak
+    void napadniIgrac_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed(){
+        initializer();
+        assertThrows(IllegalArgumentException.class, () -> {
+            igrac1.napadniIgraca(igrac1.getOruzja().size(), igrac2);
+        });
+    }
+
     @Test
     void napadniIgrac_ShouldReturnStetaEqualTo96_IfIEnergyEqualTo19_WhenStateEqualsToDEFANZIVNO(){
         initializer();
@@ -316,18 +375,17 @@ class VideoIgraTest {
     // TESTOVI ZA 8. METOD -> odbraniSe()
 
     @Test
-    void odbraniSe_ShouldThrowAnIllegalArgumentException_IfGivenArgumentLessThanZero(){
+    void odbraniSe_ShouldThrowAnIllegalArgumentException_WhenGivenArgumentLessThanZero(){
         initializer();
         assertThrows(IllegalArgumentException.class, () -> {
             igrac1.odbraniSe(-1.0);
         });
     }
 
-    @Test
-    void odbraniSe_ShouldThrowAnIllegalArgumentException_IfGivenArgumentEqualToZero(){
+    @Test // test pada jer se po dokumentaciji ocekuje da je vrednost 0 za dolaznu stetu prihvatljiv argument
+    void odbraniSe_ShouldThrowAnArithmeticException_WhenGivenArgumentEqualToZero(){
         initializer();
-
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ArithmeticException.class, () -> {
             igrac1.odbraniSe(0.0);
         });
     }
@@ -529,6 +587,22 @@ class VideoIgraTest {
 
 
     // TESTOVI ZA 9. METOD -> upotrebiMagiju()
+
+    @Test // test pada jer nije obradjen izuzetak
+    void upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenNegativeIndexIsPassed(){
+        initializer();
+        assertThrows(IllegalArgumentException.class, () -> {
+            igrac1.upotrebiMagiju(-1, igrac2);
+        });
+    }
+
+    @Test // test pada jer nije obradjen izuzetak
+    void upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed(){
+        initializer();
+        assertThrows(IllegalArgumentException.class, () -> {
+            igrac1.upotrebiMagiju(igrac1.getMagije().size(), igrac2);
+        });
+    }
 
     @Test
     void upotrebiMagiju_ShouldDecreaseZdravljeFor10Percent_IfInteligencijaLessThanNeed(){

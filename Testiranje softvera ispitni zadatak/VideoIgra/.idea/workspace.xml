@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d1bf33c-9dc3-40d8-9595-41127170e04d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../01_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../01_bug.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_bug.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_bug.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_bug.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_bug.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_bug.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_bug.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testing report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Testing report.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VideoIgra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VideoIgra.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac$Stanje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac$Stanje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Magija.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Magija.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Odeca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Odeca.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Oruzje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Oruzje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/VideoIgra.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/VideoIgra.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/VideoIgra/videoigra/VideoIgraTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/VideoIgra/videoigra/VideoIgraTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/videoigra/VideoIgraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/videoigra/VideoIgraTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Faks- Softversko i Informaciono Inzenjerstvo/3. Godina/2. Semestar/Klijentske Veb Aplikacije/Vezbe/Ispit/v10 angular-fitness-app rad sa podacima - pretraga -servis prijava i registracija - rad sa profilom/node_modules/" />
     <ignored path="$PROJECT_DIR$/Faks- Softversko i Informaciono Inzenjerstvo/3. Godina/2. Semestar/Klijentske Veb Aplikacije/Vezbe/Ispit/v11 angular-fitness-app - editovane teme, optimizacija i kraj projekta/node_modules/" />
@@ -17,10 +33,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/VideoIgra$IgracTest_getNazivTest.ic" NAME="IgracTest.getNazivTest Coverage Results" MODIFIED="1561249351083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/VideoIgra$videoigra_in_VideoIgra.ic" NAME="videoigra in VideoIgra Coverage Results" MODIFIED="1561463447470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>videoigra.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/VideoIgra$videoigra_in_VideoIgra.ic" NAME="videoigra in VideoIgra Coverage Results" MODIFIED="1561463447470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/VideoIgra$VideoIgraTest.ic" NAME="VideoIgraTest Coverage Results" MODIFIED="1562420483298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>videoigra.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/VideoIgra$IgracTest_getNazivTest.ic" NAME="IgracTest.getNazivTest Coverage Results" MODIFIED="1561249351083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>videoigra.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/VideoIgra$VideoIgraTest_odbraniSe_ShouldThrowIllegalStateException_IfTezinaGreaterThanMaxTezinaAndStateIsIllegal.ic" NAME="VideoIgraTest.odbraniSe_ShouldThrowIllegalStateException_IfTezinaGreaterThanMaxTezinaAndStateIsIllegal Coverage Results" MODIFIED="1561329381750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -31,7 +50,7 @@
     <option name="myFlattenPackages" value="true" />
     <option name="myAutoScrollToSource" value="true" />
     <option name="myAutoScrollFromSource" value="true" />
-    <option name="myElementSize" value="289" />
+    <option name="myElementSize" value="302" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -51,20 +70,7 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\Korisnik\Desktop\Postavka ispitnog zadatka" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/videoigra/VideoIgraTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="230" column="28" lean-forward="true" selection-start-line="230" selection-start-column="28" selection-end-line="230" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -104,7 +110,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,21 +117,11 @@
               <item name="VideoIgra" type="b2602c69:ProjectViewProjectNode" />
               <item name="VideoIgra" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="VideoIgra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VideoIgra" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VideoIgra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VideoIgra" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="videoigra" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -136,7 +131,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561463729306" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562426157601" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -166,8 +161,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.videoigra in VideoIgra">
-    <configuration name="VideoIgraTest.odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezina_WhenStateIsDEFANZIVNO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.VideoIgraTest">
+    <configuration name="VideoIgraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VideoIgra" />
       <extension name="coverage">
         <pattern>
@@ -177,13 +172,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="videoigra" />
       <option name="MAIN_CLASS_NAME" value="videoigra.VideoIgraTest" />
-      <option name="METHOD_NAME" value="odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezina_WhenStateIsDEFANZIVNO" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VideoIgraTest.odmoriSe_ShouldReturn50_IfEnergyLessThan50" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VideoIgraTest.napadniIgrac_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VideoIgra" />
       <extension name="coverage">
         <pattern>
@@ -193,13 +187,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="videoigra" />
       <option name="MAIN_CLASS_NAME" value="videoigra.VideoIgraTest" />
-      <option name="METHOD_NAME" value="odmoriSe_ShouldReturn50_IfEnergyLessThan50" />
+      <option name="METHOD_NAME" value="napadniIgrac_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VideoIgraTest.upotrebiMagiju_ShouldDecreaseEnergyByNeededEnergy_IfInteligencijaGreaterThanNeedAndEnergijaGreaterThanNeed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VideoIgraTest.napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VideoIgra" />
       <extension name="coverage">
         <pattern>
@@ -209,13 +203,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="videoigra" />
       <option name="MAIN_CLASS_NAME" value="videoigra.VideoIgraTest" />
-      <option name="METHOD_NAME" value="upotrebiMagiju_ShouldDecreaseEnergyByNeededEnergy_IfInteligencijaGreaterThanNeedAndEnergijaGreaterThanNeed" />
+      <option name="METHOD_NAME" value="napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VideoIgraTest.upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VideoIgraTest.upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VideoIgra" />
       <extension name="coverage">
         <pattern>
@@ -225,13 +219,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="videoigra" />
       <option name="MAIN_CLASS_NAME" value="videoigra.VideoIgraTest" />
-      <option name="METHOD_NAME" value="upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference" />
+      <option name="METHOD_NAME" value="upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="videoigra in VideoIgra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VideoIgraTest.upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenNegativeIndexIsPassed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VideoIgra" />
       <extension name="coverage">
         <pattern>
@@ -240,18 +234,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="videoigra" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="videoigra.VideoIgraTest" />
+      <option name="METHOD_NAME" value="upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenNegativeIndexIsPassed" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.videoigra in VideoIgra" />
-        <item itemvalue="JUnit.VideoIgraTest.odmoriSe_ShouldReturn50_IfEnergyLessThan50" />
-        <item itemvalue="JUnit.VideoIgraTest.upotrebiMagiju_ShouldDecreaseEnergyByNeededEnergy_IfInteligencijaGreaterThanNeedAndEnergijaGreaterThanNeed" />
-        <item itemvalue="JUnit.VideoIgraTest.upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference" />
-        <item itemvalue="JUnit.VideoIgraTest.odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezina_WhenStateIsDEFANZIVNO" />
+        <item itemvalue="JUnit.VideoIgraTest" />
+        <item itemvalue="JUnit.VideoIgraTest.upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed" />
+        <item itemvalue="JUnit.VideoIgraTest.upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenNegativeIndexIsPassed" />
+        <item itemvalue="JUnit.VideoIgraTest.napadniIgrac_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed" />
+        <item itemvalue="JUnit.VideoIgraTest.napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed" />
       </list>
     </recent_temporary>
   </component>
@@ -271,48 +267,49 @@
       <workItem from="1561289889657" duration="15097000" />
       <workItem from="1561313967484" duration="13463000" />
       <workItem from="1561367098278" duration="18262000" />
+      <workItem from="1562408961391" duration="9452000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VideoIgraTest_upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference - 2019.06.24 at 14h 52m 37s.xml">
-      <configuration name="VideoIgraTest.upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference" configurationId="JUnit" />
+    <history-entry file="VideoIgraTest_napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed - 2019.07.06 at 16h 07m 25s.xml">
+      <configuration name="VideoIgraTest.napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VideoIgraTest - 2019.06.24 at 15h 03m 16s.xml">
+    <history-entry file="VideoIgraTest_napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenNegativeIndexIsPassed - 2019.07.06 at 16h 07m 38s.xml">
+      <configuration name="VideoIgraTest.napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenNegativeIndexIsPassed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VideoIgraTest_upotrebiMagiju_ShouldThrowAnIndexOutOfBoundsException_WhenNegativeIndexIsPassed - 2019.07.06 at 16h 09m 39s.xml">
+      <configuration name="VideoIgraTest.upotrebiMagiju_ShouldThrowAnIndexOutOfBoundsException_WhenNegativeIndexIsPassed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VideoIgraTest_upotrebiMagiju_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed - 2019.07.06 at 16h 09m 59s.xml">
+      <configuration name="VideoIgraTest.upotrebiMagiju_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VideoIgraTest_napadniIgrac_ShouldThrowAnIllegalArgumentException_WhenNegativeIndexIsPassed - 2019.07.06 at 16h 13m 41s.xml">
+      <configuration name="VideoIgraTest.napadniIgrac_ShouldThrowAnIllegalArgumentException_WhenNegativeIndexIsPassed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VideoIgraTest_napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed - 2019.07.06 at 16h 13m 58s.xml">
+      <configuration name="VideoIgraTest.napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VideoIgraTest_napadniIgrac_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed - 2019.07.06 at 16h 14m 16s.xml">
+      <configuration name="VideoIgraTest.napadniIgrac_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VideoIgraTest_upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenNegativeIndexIsPassed - 2019.07.06 at 16h 16m 14s.xml">
+      <configuration name="VideoIgraTest.upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenNegativeIndexIsPassed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VideoIgraTest_upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed - 2019.07.06 at 16h 16m 32s.xml">
+      <configuration name="VideoIgraTest.upotrebiMagiju_ShouldThrowAnIllegalArgumentException_WhenBiggerThanMaxIndexIsPassed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VideoIgraTest - 2019.07.06 at 17h 12m 11s.xml">
       <configuration name="VideoIgraTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VideoIgraTest_napadniIgrac_ShouldReturnStetaEqualTo96_IfIEnergyEqualTo20_WhenStateEqualsToDEFANZIVNO - 2019.06.24 at 16h 16m 01s.xml">
-      <configuration name="VideoIgraTest.napadniIgrac_ShouldReturnStetaEqualTo96_IfIEnergyEqualTo20_WhenStateEqualsToDEFANZIVNO" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VideoIgraTest_napadniIgrac_ShouldReturnStetaEqualTo127AndHalf_IfIEnergyEqualsTo21AndStrengthLessThanNeed_WhenStateEqualsToPASIVNO - 2019.06.24 at 16h 29m 10s.xml">
-      <configuration name="VideoIgraTest.napadniIgrac_ShouldReturnStetaEqualTo127AndHalf_IfIEnergyEqualsTo21AndStrengthLessThanNeed_WhenStateEqualsToPASIVNO" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VideoIgraTest_odbraniSe_ShouldReturn6Point41_IfTezinaLessThanMaxTezina_WhenStateIsAGRESIVNO - 2019.06.24 at 16h 45m 04s.xml">
-      <configuration name="VideoIgraTest.odbraniSe_ShouldReturn6Point41_IfTezinaLessThanMaxTezina_WhenStateIsAGRESIVNO" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VideoIgraTest_odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezina_WhenStateIsDEFANZIVNO - 2019.06.24 at 16h 51m 13s.xml">
-      <configuration name="VideoIgraTest.odbraniSe_ShouldReturn2Point13_IfTezinaLessThanMaxTezina_WhenStateIsDEFANZIVNO" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VideoIgraTest_upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference - 2019.06.24 at 16h 54m 50s.xml">
-      <configuration name="VideoIgraTest.upotrebiMagiju_ShouldSetEnergijaToZero_IfInteligencijaGreaterThanNeedAndEnergijaLessThanNeedAndZdravljelessThanDifference" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VideoIgraTest_upotrebiMagiju_ShouldDecreaseEnergyByNeededEnergy_IfInteligencijaGreaterThanNeedAndEnergijaGreaterThanNeed - 2019.06.24 at 17h 19m 03s.xml">
-      <configuration name="VideoIgraTest.upotrebiMagiju_ShouldDecreaseEnergyByNeededEnergy_IfInteligencijaGreaterThanNeedAndEnergijaGreaterThanNeed" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VideoIgraTest_odmoriSe_ShouldReturn50_IfEnergyLessThan50 - 2019.06.24 at 17h 25m 40s.xml">
-      <configuration name="VideoIgraTest.odmoriSe_ShouldReturn50_IfEnergyLessThan50" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="videoigra_in_VideoIgra - 2019.06.25 at 13h 51m 16s.xml">
-      <configuration name="videoigra in VideoIgra" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52160000" />
+    <option name="totallyTimeSpent" value="61612000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1788026" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -321,7 +318,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47635525" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47619048" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -341,7 +338,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.32995737" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.12459547" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.31876332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,15 +379,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/videoigra/Igrac.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="239" column="9" lean-forward="true" selection-start-line="239" selection-start-column="9" selection-end-line="239" selection-end-column="9" />
+        <state relative-caret-position="332">
+          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/videoigra/VideoIgraTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="230" column="28" lean-forward="true" selection-start-line="230" selection-start-column="28" selection-end-line="230" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
