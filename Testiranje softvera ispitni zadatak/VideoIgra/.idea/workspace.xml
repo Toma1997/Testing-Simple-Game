@@ -5,21 +5,11 @@
       <change beforePath="$PROJECT_DIR$/../../01_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../01_bug.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../02_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_bug.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../03_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_bug.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_bug.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_bug.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../06_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_bug.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_bug.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_bug.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10_bug.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_bug.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Testing report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Testing report.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac$Stanje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac$Stanje.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Igrac.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Magija.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Magija.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Odeca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Odeca.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Oruzje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/Oruzje.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/VideoIgra.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VideoIgra/videoigra/VideoIgra.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/VideoIgra/videoigra/VideoIgraTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/VideoIgra/videoigra/VideoIgraTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/videoigra/VideoIgraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/videoigra/VideoIgraTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Faks- Softversko i Informaciono Inzenjerstvo/3. Godina/2. Semestar/Klijentske Veb Aplikacije/Vezbe/Ispit/v10 angular-fitness-app rad sa podacima - pretraga -servis prijava i registracija - rad sa profilom/node_modules/" />
@@ -70,7 +60,7 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\Korisnik\Desktop\Postavka ispitnog zadatka" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,7 +99,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,7 +111,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -131,7 +121,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562426157601" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562498787497" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -268,16 +258,12 @@
       <workItem from="1561313967484" duration="13463000" />
       <workItem from="1561367098278" duration="18262000" />
       <workItem from="1562408961391" duration="9452000" />
+      <workItem from="1562436108927" duration="241000" />
+      <workItem from="1562498622064" duration="162000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VideoIgraTest_napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed - 2019.07.06 at 16h 07m 25s.xml">
-      <configuration name="VideoIgraTest.napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenBiggerThanMaxIndexIsPassed" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VideoIgraTest_napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenNegativeIndexIsPassed - 2019.07.06 at 16h 07m 38s.xml">
-      <configuration name="VideoIgraTest.napadniIgrac_ShouldThrowAnIndexOutOfBoundsException_WhenNegativeIndexIsPassed" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VideoIgraTest_upotrebiMagiju_ShouldThrowAnIndexOutOfBoundsException_WhenNegativeIndexIsPassed - 2019.07.06 at 16h 09m 39s.xml">
       <configuration name="VideoIgraTest.upotrebiMagiju_ShouldThrowAnIndexOutOfBoundsException_WhenNegativeIndexIsPassed" configurationId="JUnit" />
     </history-entry>
@@ -302,14 +288,20 @@
     <history-entry file="VideoIgraTest - 2019.07.06 at 17h 12m 11s.xml">
       <configuration name="VideoIgraTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VideoIgraTest - 2019.07.06 at 20h 05m 43s.xml">
+      <configuration name="VideoIgraTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VideoIgraTest - 2019.07.07 at 13h 25m 59s.xml">
+      <configuration name="VideoIgraTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61612000" />
+    <option name="totallyTimeSpent" value="62015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -386,7 +378,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/videoigra/VideoIgraTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="391">
           <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
           <folding>
             <element signature="imports" expanded="true" />
